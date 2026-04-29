@@ -1,0 +1,12 @@
+{
+  "model": "XGBoost",
+  "r2": 0.983,
+  "rmse": 0.1224,
+  "mae": 0.0895,
+  "accuracy_risk_zone": 0.99,
+  "n_features": 22,
+  "n_train": 1116,
+  "n_test": 31,
+  "provinsi": 38,
+  "periode": "2021-01-01 s/d 2025-12-01"
+}

@@ -1,0 +1,9 @@
+# File besar - simpan di Azure saja
+*.pkl
+*.parquet
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Mac system files
+.DS_Store
