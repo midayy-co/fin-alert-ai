@@ -232,6 +232,11 @@ Jalankan notebook secara berurutan:
 5. **Gemini API Quota** — Free tier Gemini API memiliki batas request harian. 
    Narasi AI per provinsi menggunakan fallback rule-based (`narasi_final.parquet`) 
    saat quota habis. Kode integrasi Gemini tetap tersedia di `04_modeling.ipynb`.
+6. **Azure Managed Endpoint** — Student subscription tidak mendukung 
+   pembuatan Managed Online Endpoint (SubscriptionNotRegistered). 
+   Model telah berhasil didaftarkan ke Azure ML Model Registry 
+   (xgb-finalert-ai v6). Script deployment tersedia di `deployment/deploy_finalert.py` 
+   dan `deployment/score.py`.
 
 ---
 
