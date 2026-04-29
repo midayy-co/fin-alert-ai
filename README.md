@@ -229,6 +229,9 @@ Jalankan notebook secara berurutan:
 2. **Interpolasi Linear** — Data tahunan (PDRB, Internet, TPT, TKD) diinterpolasi ke bulanan menggunakan linear interpolation
 3. **Azure OpenAI** — Subscription Azure for Students tidak mendukung Azure OpenAI; narasi menggunakan Gemini API sebagai alternatif
 4. **Test Set Kecil** — Hanya ~31 observasi efektif (Jan–Des 2025 setelah dropna) karena *time-based split*. R² test = 0.9160 adalah ukuran generalisasi yang valid; R² 0.9830 adalah evaluasi in-sample (full dataset) yang dilaporkan secara terpisah untuk transparansi.
+5. **Gemini API Quota** — Free tier Gemini API memiliki batas request harian. 
+   Narasi AI per provinsi menggunakan fallback rule-based (`narasi_final.parquet`) 
+   saat quota habis. Kode integrasi Gemini tetap tersedia di `04_modeling.ipynb`.
 
 ---
 
